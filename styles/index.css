@@ -1,0 +1,15 @@
+*{ 
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0;
+} 
+
+.first img { 
+    display: inline; 
+    height: 150px;
+    width: 150px; 
+} 
+.second img {
+    height: 20px;
+    width: 22px;
+}

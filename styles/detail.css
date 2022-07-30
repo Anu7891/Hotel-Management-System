@@ -1,0 +1,17 @@
+#main {
+    height: fit-content;
+    width: fit-content;
+} 
+header div img {
+    height: 60px;
+    width: 60px;
+} 
+.one img{
+    height: 500px;
+    width: 500px;
+} 
+footer div img{
+    height:20px; 
+    width: 22px;
+
+}

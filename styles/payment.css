@@ -1,0 +1,13 @@
+#main {
+    height: fit-content;
+    width: fit-content;
+} 
+
+header div img {
+    height: 60px;
+    width: 60px;
+} 
+.first img {
+    height: 500px;
+    width: 500px;
+}
