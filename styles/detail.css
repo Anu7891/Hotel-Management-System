@@ -1,5 +1,11 @@
+*{
+    box-sizing: border-box;
+    font-family:  'Ubuntu', sans-serif;
+}
+
 body{
-    margin: 0;
+    margin: 0; 
+    background-color: #e0e0e0;
 } 
 footer p{
     margin: 0;
@@ -18,11 +24,46 @@ footer div img{
 
 } 
 header {
+    position: fixed;
+    margin: auto 0;
+    top: 0;
     background-color: rosybrown;
+    margin: 0;
+    position: sticky;
+    background-attachment: fixed;
+}  
+
+#head{
+    height: 60px;
+    width: 100%;
 } 
-footer{
-    background-color: rosybrown;
+
+header #head {
+    background-color: rosybrown;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 } 
+.header_login a {
+    text-decoration: none;
+    color: black;
+}  
+.header_login{
+    padding: 1em;
+} 
+
+footer {
+position: fixed;
+margin: auto 0;
+bottom: 0;
+padding: 1%;
+background-color: rosybrown;
+margin: 0;
+position: sticky;
+background-attachment: fixed; 
+}
+
 .one {
     margin-top: 2%; 
     margin-left: 4%; 
@@ -39,4 +80,21 @@ footer{
     margin-left: 4%;
     margin-right: 4%; 
     margin-bottom: 2%;
-}
+} 
+.social{
+    float: right;
+}   
+footer div p{
+    text-align: center;
+    align-items: center;
+    outline: 0; 
+    font-size: 10px; 
+    padding-bottom: 0;
+    
+}   
+
+.contact a{
+    float: left;
+    text-decoration: none;
+    color: black;
+}  
