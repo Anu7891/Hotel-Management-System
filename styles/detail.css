@@ -1,7 +1,9 @@
-#main {
-    height: fit-content;
-    width: fit-content;
+body{
+    margin: 0;
 } 
+footer p{
+    margin: 0;
+}
 header div img {
     height: 60px;
     width: 60px;
@@ -14,4 +16,27 @@ footer div img{
     height:20px; 
     width: 22px;
 
+} 
+header {
+    background-color: rosybrown;
+} 
+footer{
+    background-color: rosybrown;
+} 
+.one {
+    margin-top: 2%; 
+    margin-left: 4%; 
+    margin-right: 4%;
+} 
+.two {
+    margin-top: 0;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 1%;
+} 
+.three {
+    margin-top: 1%;
+    margin-left: 4%;
+    margin-right: 4%; 
+    margin-bottom: 2%;
 }

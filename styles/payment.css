@@ -1,7 +1,20 @@
-#main {
-    height: fit-content;
-    width: fit-content;
+body{
+    margin: 0; 
+    background-color: #e0e0e0;
+}   
+
+
+header {
+    background-color: rosybrown;
 } 
+
+footer {
+    background-color: rosybrown;
+} 
+
+footer p{
+    margin: 0;
+}
 
 header div img {
     height: 60px;
@@ -10,4 +23,21 @@ header div img {
 .first img {
     height: 500px;
     width: 500px;
+} 
+.first {
+    background-color: rgb(132, 136, 139); 
+    width: 50%;
+    height: 20%;
+    margin: 2% auto;
+} 
+.second {
+    margin: 2%;
+} 
+.third {
+    margin: 2%; 
+    border: 1px solid black;
+    border-radius: 5px;
+} 
+.third div{
+    padding: 1% 2% ;
 }

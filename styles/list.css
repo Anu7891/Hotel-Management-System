@@ -1,8 +1,39 @@
-#main {
-    height: fit-content;
-    width: fit-content;
+body{
+    background-color: #e0e0e0; 
+    margin: 0;
+
 }
+
+header {
+    background-color: rosybrown;
+} 
+
+footer {
+    background-color: rosybrown;
+}  
+footer p{
+    margin: 0;
+} 
+
 #first img {
-    height:150px;
-    width: 150px;
+    height: 150px;
+    width:150px;
+}
+.one {
+    margin: 2%;
+    height: auto;
+    width: 40%; 
+    background-color: rgb(132, 136, 139); 
+}  
+.two{
+    margin: 2%;
+    height: auto;
+    width: 40%; 
+    background-color: rgb(132, 136, 139);
+} 
+.three {
+    margin: 2%;
+    height: auto;
+    width: 40%; 
+    background-color: rgb(132, 136, 139);
 }
