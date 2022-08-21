@@ -1,13 +1,20 @@
 *{
     box-sizing: border-box;
     font-family:  'Ubuntu', sans-serif;
+} 
+.checked{
+    color:orange;
 }
 
 body{
     background-color: #e0e0e0; 
     margin: 0;
+    overflow-x: hidden;
+    width: 100%;
 
-}
+} 
+
+/* Header */
 
 header #head {
     background-color: rosybrown;  
@@ -17,7 +24,12 @@ header #head {
     padding-left: 1%; 
     
     
-} 
+}  
+.table_td{
+    padding: 10px 20px;             
+    align-items: center; 
+    align-content: center;
+}
 header {
     position: fixed;
     margin: auto 0;
@@ -28,17 +40,25 @@ header {
     background-attachment: fixed;
 }    
 #head{
-    height: 60px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;              
+    align-items: center; 
+    align-content: center; 
+    padding: 0 1%;
+    height: 60px; 
     width: 100%;
 }  
 
-.header_login a {
-    text-decoration: none;
-    color: black; 
-}  
-.header_login{
-    padding-right: 2%; 
-    padding-top: 1em; 
+.header_login{ 
+    text-decoration: none; 
+    color: black;  
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;              
+    align-items: center; 
+    align-content: center; 
+    padding: 0 1%;               
 }
 
 /*content*/ 
@@ -57,7 +77,16 @@ header {
     
     
 } 
-
+.nav_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;              
+    align-items: center; 
+    align-content: center;
+}
+.nav_div a{
+    color: black; text-decoration: none;
+}
 .one {
     margin: 2%;
     height: 250px;
@@ -66,9 +95,19 @@ header {
     display: flex; 
      
 }  
+.one:hover{
+    background-color: rosybrown;
+}  
+.two:hover {
+    background-color: rosybrown;
+}   
+.three:hover { 
+    background-color: rosybrown;
+}
 .description_1{
     padding-left: 1em; 
     font-size: 20px;
+    padding-top: 4%;
 } 
 .two {
     margin: 2%;
@@ -82,7 +121,8 @@ header {
  
 .description_2{
     padding-left: 1em; 
-    font-size: 20px;
+    font-size: 20px; 
+    padding-top: 4%;
 }  
 
 .three {
@@ -94,7 +134,8 @@ header {
 }  
 .description_3{
     padding-left: 1em; 
-    font-size: 20px;
+    font-size: 20px; 
+    padding-top: 4%;
 }   
 
 div ul{
@@ -115,63 +156,83 @@ div ul a{
     width: 100%;
 } 
    
-.one a{
-    text-decoration: none;
-    color: black;
-}  
-#second {
-    display: none;
+.one a{ 
+    text-decoration: none; 
+    color: black; 
+}   
+#map_view{ 
+    display: contents; 
 } 
 
  /*Footer */   
  
- footer{
-    position: fixed;
-    margin: auto 0;
-    bottom: 0;
-    padding: 1%;
-    background-color: rosybrown;
-    position: sticky;
-    background-attachment: fixed;  
-    display: flexbox;
-}  
-
-
-#footer_main {
-    justify-content: center;
+ footer{ 
+    margin: auto 0; 
+    width: 100%;
+    bottom: 0; 
+    padding: 1%; 
+    background-color: rosybrown;  
+     background-attachment: fixed;   
+    display: flexbox; 
+}   
+   
+ 
+#footer_main { 
+     justify-content: center; 
+     align-items: center;  
+     display: flex;  
+     justify-content: space-between; 
+ }   
+ .copyright { 
+    margin-left: 28%;  
+    padding-left: 9%; 
+    font-size: 10px;  
+    font-weight: 400; 
+    text-align: center;
+  
+  }   
+  .social { 
+    margin-left: 18%; 
+    margin-right: 2%; 
+    padding-right: 1%;
+    margin-inline-end: 0;  
+    padding-left: 15%; 
+     
+  }  
+  .contact { 
+    margin-left: 2%; 
+    margin:0;  
+    padding-left:1%;
+    text-align: center;
+    display: flex;
+    justify-content: center;              
     align-items: center; 
-    display: flex; 
-    justify-content: space-between;
-} 
-.copyright {
-margin-left: 28%; 
-padding-left: 9%;
-font-size: 10px; 
-font-weight: 400;
-
-}  
-.social {
-margin-left: 20%; 
-margin-inline-end: 0; 
-padding-left: 20%;
-
-} 
-.contact {
-margin-left: 2%;
-margin:0; 
-padding-left:2%;   
-
-} 
-.contact a {
-text-decoration: none;
-color: black;
-} 
-.social img {
-    height: 20px;
-    width: 22px;
+    align-content: center;    
+ 
+  }  
+  .contact a { 
+    text-decoration: none; 
+    color: black; 
+  } 
+  .social img { 
+    height: 20px; 
+    width: 22px; 
 }
 
-
+  .modal-footer{
+    display: flex;
+    /* flex-direction: row;  */
+    justify-content: center;              
+    align-items: center; 
+    align-content: center;
+  }
+  .modal-body{
+    display: flex;
+    /* flex-direction: row;  */
+    justify-content: center;              
+    align-items: center; 
+    align-content: center;
+  }
 
 
 

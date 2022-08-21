@@ -6,7 +6,8 @@
 body{
     margin: 0; 
     background-color: #e0e0e0;  
-    overflow-x: hidden;
+    overflow-x: hidden; 
+    width: 100%;
 }
 .social img {
     height: 20px;
@@ -20,7 +21,12 @@ header #head {
     padding-left: 1%; 
     
     
-} 
+}  
+.table_td{
+    padding: 10px 20px;             
+    align-items: center; 
+    align-content: center;
+}
 header {
     position: fixed;
     margin: auto 0;
@@ -31,20 +37,31 @@ header {
     background-attachment: fixed;
 }    
 #head{
-    height: 60px;
-    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;              
+    align-items: center; 
+    align-content: center; 
+    padding: 0 1%;
+    height: 60px; 
+    width: 100%; 
 }  
+   
+.header_login{ 
+    text-decoration: none; 
+    color: black;  
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;              
+    align-items: center; 
+    align-content: center; 
+    padding: 0 1%;               
+} 
 
-.header_login a {
-    text-decoration: none;
-    color: black; 
-}  
-.header_login{
-    padding-right: 2%; 
-    padding-top: 1em; 
-}
 
-.container {
+/*---Content Div----- */
+
+.container-fluid {
     background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg"); 
     height: 380px;  
     background-repeat: no-repeat; 
@@ -53,131 +70,175 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;  
-    width: 100%;  
-       
-}  
-.container form  {
-    background-color: #f1f1f1;
-    width: 29%;
-    border-radius: 12px ; 
-} 
-.container form input{ 
-    border: 1px solid transparent;
-    border-radius: 12px;
-    padding: 10px; 
-    width: 100%; 
-    font-size: 16px; 
-    outline: none;
-}  
-
-#first img{
-    height: 150px;
-    width: 150px;  
-    border-radius: 25px;
-    box-shadow: 10px 10px 10px grey;  
+    width:100%;
     
-}    
-
-.content_img {  
-    display: flex;
-    justify-content: space-between; 
-    margin-left: 15%;
-    margin-right: 15%; 
-    margin-top: 4%; 
-    align-items: center; 
-    position: relative;
-
+       
 }   
-.content_img a img {
-    display: block;
-    height: 150px;
-    width: 150px;
-} 
-.content_img :hover .overlay {
-    opacity: 0.5;
-  } 
-
-.overlay {
- position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 150px;
-  width: 150px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: grey ; 
-  border-radius: 25px;
-} 
-.text {
-    position:relative;
-    text-align: center;
-    justify-content: center;
-    margin-top: 45%; 
-    color: white;
-}
-  
-.view_more a {
-    text-align: center;
-    display:inline-block;
-    text-decoration: none;
-    width: 100%;
+#box{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-decoration: none;
-    color: black; 
-   padding: 1em; 
-   padding-top: 3em; 
-   padding-bottom: 3em;
-   justify-content: center;
+    align-content: center;
+    justify-content: center;
 }  
+.first{
+    margin: auto 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative; 
+
+} 
+.item{
+    margin: 10%;
+     position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 10px 10px 10px rgb(30,30,30);
+    border-radius: 25px;
+}
+.item:hover .overlay{
+    opacity: 0.5;
+}  
+.overlay { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 150px; 
+    width: 150px; 
+    opacity: 0; 
+    transition: 0.3s ease-in-out; 
+    background-color: rgb(30, 30, 30) ;  
+    border-radius: 25px;
+    cursor: pointer;
+}  
+.text { 
+    position:relative; 
+    text-align: center; 
+    justify-content: center; 
+    margin-top: 45%;  
+    color: rgb(255, 255, 255); 
+}  
+.container-fluid form  { 
+    background-color: #f1f1f1; 
+    width: 29%; 
+    border-radius: 12px ;  
+}  
+.container-fluid form input{  
+    border: 1px solid transparent; 
+    border-radius: 12px; 
+    padding: 10px;  
+    width: 100%;  
+    font-size: 16px;  
+    outline: none; 
+}  
+.container form  { 
+    background-color: #f1f1f1; 
+    width: 29%; 
+    border-radius: 12px ;  
+}  
+.container form input{  
+    border: 1px solid transparent; 
+    border-radius: 12px; 
+    padding: 10px;  
+    width: 100%;  
+    font-size: 16px;  
+    outline: none; 
+}   
+ 
+#box img{ 
+    height: 150px; 
+    width: 150px;   
+    border-radius: 25px;  
+}   
+#content{
+    width: 100%;
+}  
+ 
+.view_more{ 
+    margin: 30px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;              
+    align-items: center; 
+    align-content: center;
+}   
 
 /* Footer div*/  
 
-
-    footer{
-        position: fixed;
-        margin: auto 0;
-        bottom: 0;
-        padding: 1%;
-        background-color: rosybrown;
-        position: sticky;
-        background-attachment: fixed;  
-        display: flexbox;
-    }  
+ 
+footer{ 
+    margin: auto 0; 
+    width: 100%;
+    bottom: 0; 
+    padding: 1%; 
+    background-color: rosybrown;  
+     background-attachment: fixed;   
+    display: flexbox; 
+}   
+   
+ 
+#footer_main { 
+     justify-content: center; 
+     align-items: center;  
+     display: flex;  
+     justify-content: space-between; 
+ }   
+ .copyright { 
+    margin-left: 28%;  
+    padding-left: 9%; 
+    font-size: 10px;  
+    font-weight: 400; 
+    text-align: center;
   
-
-   #footer_main {
-        justify-content: center;
-        align-items: center; 
-        display: flex; 
-        justify-content: space-between;
-    } 
-  .copyright {
-    margin-left: 28%; 
-    padding-left: 9%;
-    font-size: 10px; 
-    font-weight: 400;
+  }   
+  .social { 
+    margin-left: 18%; 
+    margin-right: 2%; 
+    padding-right: 1%;
+    margin-inline-end: 0;  
+    padding-left: 15%; 
+     
+  }  
+  .contact { 
+    margin-left: 2%; 
+    margin:0;  
+    padding-left:1%;
+    text-align: center;
+    display: flex;
+    justify-content: center;              
+    align-items: center; 
+    align-content: center;    
  
   }  
-  .social {
-    margin-left: 20%; 
-    margin-inline-end: 0; 
-    padding-left: 20%;
-    
+  .contact a { 
+    text-decoration: none; 
+    color: black; 
   } 
-  .contact {
-    margin-left: 2%;
-    margin:0; 
-    padding-left:2%;   
+  .social img { 
+    height: 20px; 
+    width: 22px; 
+}
 
-  } 
-  .contact a {
-    text-decoration: none;
-    color: black;
+  .modal-footer{
+    display: flex;
+    /* flex-direction: row;  */
+    justify-content: center;              
+    align-items: center; 
+    align-content: center;
   }
-
-    
-
-
+  .modal-body{
+    display: flex;
+    /* flex-direction: row;  */
+    justify-content: center;              
+    align-items: center; 
+    align-content: center;
+  }
 
